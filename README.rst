@@ -29,7 +29,7 @@ arp_table exports two main things:
 
 ::
 
-    >>> from arp_table import ARPTABLE
+    >>> from arp_table import ARPTABLE 
     >>> print(ARPTABLE)
 
     [{'Device': 'eth0',
@@ -39,6 +39,7 @@ arp_table exports two main things:
       'IP address': '10.3.0.1',
       'Mask': '*'}]
 
+    >>> from arp_table import get_arp_table
     >>> print(get_arp_table())
 
     [{'Device': 'eth0',
